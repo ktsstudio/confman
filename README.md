@@ -2,6 +2,11 @@
 
 Library for configuration application
 
+## Install
+```bash
+pip install file2conf
+```
+
 ## Usage
 
 ##### settings.py
