@@ -12,13 +12,15 @@ except:
 class Option(object):
     def __init__(self, name, **kwargs):
         self.name = name
-        self.value = kwargs.get('default', None)
         self.type = kwargs.get('type', str)
+        self.value = kwargs.get('default', self.type())
         self.help = kwargs.get('help', None)
 
     def set_value(self, v):
         if self.type is not dict and hasattr(self.type, '__call__'):
             self.value = self.type(v)
+        elif isinstance(self.value, dict) and isinstance(v, dict):
+            self.value.update(v)
         else:
             self.value = v
 
