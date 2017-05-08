@@ -36,8 +36,8 @@ listen:
 ##### main.py
 ```python
 from settings import options
-print(options.broker)
-print(options.broker['port'])
+print(options.listen)
+print(options.listen['port'])
 ```
 
 ##### Output:
