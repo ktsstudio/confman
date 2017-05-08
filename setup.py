@@ -6,14 +6,14 @@ version = '0.1.1'
 modules = ['PyYAML', 'ujson']
 
 setup(
-    name='confman',
+    name='file2conf',
     version=version,
     description='Lib for reading configs',
     long_description='Lib for reading configs',
     author='KTS',
-    author_email='confman@ktsstudio.ru',
+    author_email='file2conf@ktsstudio.ru',
     url='https://github.com/KTSStudio/confman',
-    download_url='https://github.com/KTSStudio/confman/tarball/v' + version,
+    download_url='https://github.com/KTSStudio/confman/tarball/' + version,
     license='MIT',
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
